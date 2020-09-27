@@ -6,7 +6,7 @@ class eaducation extends React.Component {
         <div class="container">
             <div>
                 <h1>
-                    10th Eaducation:-
+                    10th Education:-
                 </h1>
                 <div>
                     Rajendra Vidyalaya <br/>
@@ -17,7 +17,7 @@ class eaducation extends React.Component {
             <br></br>
             <div>
                 <h1>
-                    12th Eaducation:-
+                    12th Education:-
                 </h1>
                 <div>
                     Rajendra Vidyalaya(ICSE)<br></br>
