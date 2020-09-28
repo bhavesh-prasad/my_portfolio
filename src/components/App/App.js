@@ -1,12 +1,17 @@
 // import { Component } from 'react';
-import React from 'react';
+import React ,{useEffect}from 'react';
 import home_content from '../Home/home';
 import eaducation from '../Eaducation/eaducation';
 import Projects from '../Projects/projects'
 import work from '../Work/work';
+import gsap from 'gsap';
 import {BrowserRouter as Router ,Switch, Route} from 'react-router-dom';
-class Application extends React.Component {
-  render(){
+function Application() {
+  useEffect( ()=> {
+    const t = gsap.timeline({dafaults : {ease : "power1.out"}});
+    console.log("Done");
+    t.to('.textspan' , { y:"0%" , duration : 1});
+  });
     return(
       <Router>
         <Switch>
@@ -18,7 +23,6 @@ class Application extends React.Component {
       </Router>
 
     );
-  }
 }
 
 // ReactDOM.render(temp,document.getElementById("root"));

@@ -7,7 +7,7 @@ class home_contents extends React.Component {
         <div>
           <h1>Summary</h1>
         </div>
-        <div>
+        <div> 
           Engineering student studying computer science and engineering at BIT Bangalore.
           Used highly efficient development techniques to build and lead a team of 6 to achieve both short term as well as
           long term goals, strengthening my team player abilities.
