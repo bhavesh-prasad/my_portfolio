@@ -1,10 +1,28 @@
-import React from 'react';
-class home_contents extends React.Component {
-  render() {
-    return (
-      <div>
+import React ,{useEffect} from 'react';
+import photo from './(5).jpg';
+import home from './home.css';
+import gsap from 'gsap';
+import ScriptTag from 'react-script-tag';
+function Home_contents() {
+  useEffect(() => {
+    const t = gsap.timeline({dafaults : {ease : "power1.out"}});
+    t.to('.mainPagePhoto' , { y:"0%" , duration : 1,delay:2.5});
+    t.to('.text1' , { x:"0%" , duration : 1}, "-=1");
+    t.to('.text2' , { x:"0%" , duration : 1});
 
-        <div>
+  })
+    return (
+      <div id = "mainDivElement">
+        <ScriptTag isHydrating ={true} type="text/javascript" src="HomeScript" />
+        <link rel="stylesheet" href={home}/>
+        <div className="startingAnimationElement" class="container">
+          <img src={photo} className="mainPagePhoto"/>
+          <div id="verticalBar"></div>
+          <div id ="createdText"><h1 class="text1">Created By </h1>
+          <br/><h2 class="text2">Bhavesh Prasad</h2>
+        </div>
+        </div>
+        {/* <div>
           <h1>Summary</h1>
         </div>
         <div> 
@@ -27,9 +45,8 @@ class home_contents extends React.Component {
             Up-to-date with changes in technology ; business implications / applications of new technologies aspire to
             yearn my career in IT Industry with capabilities to generate innovative ideas and integrate them into desired results offering .
           </div>
-        </div>
+        </div> */}
       </div>
     )
-  }
 }
-export default home_contents;
+export default Home_contents;

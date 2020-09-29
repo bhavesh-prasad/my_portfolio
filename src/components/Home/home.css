@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap");
+.mainPagePhoto{
+    max-width: 35%;
+    transform: translateY(150%);
+}
+.startingAnimationElement{
+    align-items: linear;
+}
+#verticalBar{
+    padding:0.1%;
+    background-color: whitesmoke;
+    width: 0.01%;
+    padding-top: 30%;
+    position: relative;
+    left: 35%;
+    transform: translateY(-120%);/*-> -120%*/
+}
+#createdText{
+    position: absolute;
+    left: 39%;
+    padding-left: 4.5%;
+    top: 24%;
+    /* background-color: yellow; */
+    overflow: hidden;
+}
+.text1{
+    font-family: 'Patrick Hand', cursive; ;
+    color: whitesmoke;
+    font-size: 4vw;
+    transform: translateX(-120%);
+}
+.text2{
+    font-family: 'Patrick Hand', cursive; ;
+    color: whitesmoke;
+    font-size: 4vw;
+    transform: translateX(-120%);
+    /* padding-left: 5%; */
+}
